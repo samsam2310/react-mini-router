@@ -83,14 +83,14 @@ the [ajax crawling](https://developers.google.com/webmasters/ajax-crawling/) Goo
 Example:
 
     React.render(
-        App({ history: true }),
+        React.createElement(App, { history: true }),
         document.getElementById('app')
     );
 
 You can also mount the Router at a root path, and all routes will be matched relative to it:
 
     React.render(
-        App({ root: '/some/path/to/app' }),
+        React.createElement(App, { root: '/some/path/to/app' }),
         document.getElementById('app')
     );
 
